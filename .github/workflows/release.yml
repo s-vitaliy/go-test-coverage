@@ -55,6 +55,4 @@ jobs:
             VERSION=${{ env.RELEASE_VERSION }}
           platforms: linux/arm64,linux/amd64
           tags: |
-            ghcr.io/${{ github.repository }}:${{ env.RELEASE_VERSION }}
-            ghcr.io/${{ github.repository }}:${{ steps.majorver.outputs.major-tag }}
             ghcr.io/${{ github.repository }}:latest
